@@ -1,0 +1,8 @@
+<div class="footer">
+  <div>footer со ссылками на гитхабы авторов</div>
+  <div *ngIf="response?.name">
+    <img src="{{response.avatar_url}}" alt="">
+    <div>{{response.name}}</div>
+  </div>
+  <div *ngIf="response?.message">{{response.message}}</div>
+</div>

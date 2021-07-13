@@ -1,0 +1,49 @@
+.feature-cart {
+  position: relative;
+  width: 580px;
+  height: 330px;
+  display: flex;
+  border: 1px solid;
+  flex-wrap: wrap;
+  margin: 20px;
+
+  & > div {
+    width: 50%;
+    height: 100%;
+  }
+
+  &__label {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 130%;
+    color: rgb(33, 35, 83);
+    padding: 16px;
+    width: 54%;
+  }
+
+  &__text {
+
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    right: 5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgb(75, 93, 104);
+  }
+
+  &__image {
+    position: relative;
+    background-size: contain;
+    padding: 16px;
+    width: 100%;
+    min-height: 100px;
+  }
+
+}
