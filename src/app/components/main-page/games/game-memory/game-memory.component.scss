@@ -1,0 +1,51 @@
+.game-memory-wrapper{
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background: rgba(blue, .1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.message{
+  height: 5%;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 5% 0;
+}
+.game-memory{
+  width: 70%;
+  height: 70%;
+  background: rgba(purple, .1);
+  &__word-list{
+    width: 100%;
+    height: 50%;
+    padding: 50px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  &__word-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 20%;
+    padding: 5%;
+    border: 1px solid;
+    background: rgba(lightblue, 1);
+    cursor: pointer;
+    &:hover{
+      background: rgba(yellow, 1);
+    }
+    &--active{
+      background: rgba(orange, 1) !important;
+    }
+    &--disabled{
+      background: rgba(green, .2);
+      pointer-events: none;
+      color: gray;
+    }
+  }
+}

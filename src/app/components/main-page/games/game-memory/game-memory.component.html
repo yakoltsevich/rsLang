@@ -1,0 +1,28 @@
+<div class="game-memory-wrapper">
+<div class="message">{{message}}</div>
+  <div class="game-memory">
+
+    <div class="game-memory__word-list">
+      <div
+        *ngFor="let cart of cartListEng"
+        class="game-memory__word-cart"
+        [class.game-memory__word-cart--active]="cart.key === activeEngCartKey"
+        [class.game-memory__word-cart--disabled]="passedListKeys.includes(cart.key)"
+        (click)="onEngCartClick(cart)"
+      >{{cart.wordEng}}
+      </div>
+    </div>
+
+    <div class="game-memory__word-list">
+      <div
+        *ngFor="let cart of cartListRus"
+        class="game-memory__word-cart"
+        [class.game-memory__word-cart--active]="cart.key === activeRusCartKey"
+        [class.game-memory__word-cart--disabled]="passedListKeys.includes(cart.key)"
+        (click)="onRusCartClick(cart)"
+      >{{cart.wordRus}}
+      </div>
+    </div>
+
+  </div>
+</div>
